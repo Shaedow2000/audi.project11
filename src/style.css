@@ -10,9 +10,28 @@
   --color-uniform-white: white;
 
   --animate-slide: slide 1.5s ease-in-out forwards;
-  --animate-appear: appear 2s ease-in-out forwards
+  --animate-appear: appear 1s ease-in-out forwards;
 }
 
+#some-photographs img {
+  @apply absolute w-74 md:w-90 lg:w-96 aspect-square border-2 border-uniform-red rounded-2xl object-cover;
+}
+#some-photographs img:hover {
+  @apply border-3 border-uniform-white rounded-xl transition-all ease-in-out duration-200;
+}
+
+#img1 {
+  @apply animate-[spin_5s_ease-in-out_infinite]
+}
+#img2 {
+  @apply animate-[spin_5.5s_ease-in-out_infinite]
+}
+#img3 {
+  @apply animate-[spin_6s_ease-in-out_infinite]
+}
+#img4 {
+  @apply animate-[border-color_3s_ease-in-out_infinite]
+}
 
 @keyframes slide {
   from {
@@ -33,3 +52,15 @@
     opacity: 100%;
   }
 }
+
+@keyframes border-color {
+  0% {
+    border-color: var( --color-uniform-red ); 
+  }
+  50% {
+    border-color: var( --color-uniform-white );
+  }
+  100% {
+    border-color: var( --color-uniform-red );
+  }
+} 

@@ -8,3 +8,8 @@ function is_visible( element: HTMLElement ): boolean {
   ) 
 }
 
+self.addEventListener( 'scroll', (): void => {
+  if ( is_visible( second_header ) ) {
+    second_header.classList.add( 'animate-appear' )
+  }
+} )
