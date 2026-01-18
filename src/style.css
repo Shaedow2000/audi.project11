@@ -8,4 +8,28 @@
   --color-uniform-red: #F00000;
   --color-uniform-black: black;
   --color-uniform-white: white;
+
+  --animate-slide: slide 1.5s ease-in-out forwards;
+  --animate-appear: appear 2s ease-in-out forwards
+}
+
+
+@keyframes slide {
+  from {
+    transform: translateX( -150% );
+    opacity: 0;
+  }
+  to {
+    transform: translateX( 0 );
+    opacity: 100%;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
 }
