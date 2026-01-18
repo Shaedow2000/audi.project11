@@ -34,7 +34,7 @@
 }
 
 #photographs img {
-  @apply rounded-xl aspect-2/3 border-2 border-uniform-red object-cover w-96 transition ease-in-out duration-500 snap-center;
+  @apply rounded-xl aspect-2/3 border-2 border-uniform-red object-cover w-[95%] transition ease-in-out duration-500 snap-center;
 }
 
 #ig-svg {
